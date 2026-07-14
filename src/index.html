@@ -1,0 +1,41 @@
+<!--
+	============================================
+Сделайте HTML файл с формой, в которой нужно ввести
+в текстовом поле текст вашего запроса, который при нажатии
+на кнопку Submit/Запросить будет передаваться гуглу
+и там обрабатываться-запрашиваться
+Хинт- поменяйте action и вместо заглушки поставьте актуальный адрес
+поисковика и посмотрите как правильно передать в него параметр
+запроса
+
+	============================================
+-->
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Поисковый запрос в Google</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<main class="search-container">
+	<h1 class="search-title">
+		Найди в
+		<span class="logo-g1">G</span><span class="logo-o1">o</span><span class="logo-o2">o</span><span class="logo-g2">g</span><span class="logo-l">l</span><span class="logo-e">e</span>
+	</h1>
+	
+	<form class="search-form" action="https://www.google.com/search" method="get" target="_blank">
+		<label for="search-input">Поисковый запрос</label>
+		<input type="text" id="search-input" class="search-input" name="q" placeholder="Что вы хотите найти?" required autocomplete="off">
+		<button type="submit" class="search-submit-btn">Поиск в Google</button>
+	</form>
+</main>
+
+</body>
+</html>
